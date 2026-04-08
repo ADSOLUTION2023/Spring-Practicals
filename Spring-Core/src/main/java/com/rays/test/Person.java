@@ -1,36 +1,33 @@
 package com.rays.test;
 
-public class UserBean {
+public class Person {
 	
 	private String name;
 	private String address;
-	private String dob;
 	
-	public UserBean() {
+	public Person() {
 		System.out.println("Default constructor called");
 	}
-	public UserBean(String name, String Address, String dob, String address) {
-		this.name =name;
-		this.address = address;
-		this.dob = dob;
-	}
 	
+	public Person(String name, String address) {
+		 this.name = name;
+		 this.address = address;
+	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getDob() {
-		return dob;
-	}
-	public void setDob(String dob) {
-		this.dob = dob;
-	}	
+
 }
